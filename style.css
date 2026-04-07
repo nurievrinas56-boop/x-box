@@ -24,6 +24,7 @@ header {
   list-style: none;
   gap: 24px;
   padding-top: 21px;
+ 
 }
 
 .nav_bar li a {
@@ -33,6 +34,7 @@ header {
   font-size: 16px;
   line-height: 100%;
   color: #fff;
+ 
 }
 
 .xbox-logo{
@@ -72,6 +74,7 @@ header {
   background: #373a3c;
   height: 60px;
   border-radius: 4px;
+  
 }
 
 .nav_bar {
@@ -80,6 +83,7 @@ header {
   list-style: none;
   gap: 24px;
   padding-top: 21px;
+  
 }
 
 .nav_bar li a {
@@ -89,9 +93,12 @@ header {
   font-size: 16px;
   line-height: 100%;
   color: #fff;
+  color: rgba(255, 255, 255, 0.5);
+}
+.nav_bar li a span{
+  color: #fff;
 }
 
-/* Обнуляем отступы для main, чтобы картинка была во весь экран */
 main {
   width: 100%;
   background-color: #000;
@@ -100,14 +107,14 @@ main {
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 600px; /* Настройте высоту под макет */
+  height: 600px; 
   overflow: hidden;
 }
 
 .banner-img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Растягивает фото без искажений на всю область */
+  object-fit: cover; 
   display: block;
 }
 
@@ -117,7 +124,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(255, 255, 255, 0.2); /* Легкое затемнение, чтобы текст читался */
+  background: rgba(255, 255, 255, 0.2); 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +140,7 @@ main {
 .content h1 {
   font-family: var(--font-family);
   font-size: 48px;
-  margin-bottom: 5px;
+  margin-top: 109px;
 }
 
 .content p {
@@ -143,7 +150,6 @@ main {
   padding-right: 220px;
 }
 
-/* Стили кнопок */
 .buttons {
   display: flex;
   justify-content: center;
@@ -170,7 +176,6 @@ main {
   background-color: #7ed321;
   transform: scale(1.05);
 }
-/* БАННЕР (Верх) */
 .hero-banner {
   position: relative;
   width: 100%;
@@ -196,7 +201,6 @@ main {
 .banner-flex {
   display: flex;
   justify-content: flex-end;
-  /* Текст уходит вправо */
   width: 100%;
 }
 
@@ -211,10 +215,9 @@ main {
   display: flex;
   gap: 15px;
 }
-/* НИЖНЯЯ СЕКЦИЯ (Детали) */
+
 .game-details {
   background: #f8f9fa;
-  /* Светлый фон как на макете */
   padding: 80px 0;
   color: #373a3c;
 }
@@ -238,7 +241,6 @@ main {
   gap: 10px;
 }
 
-/* Блоки Текст + Картинка */
 .info-block {
   display: flex;
   align-items: center;
@@ -290,7 +292,7 @@ main {
   color: #fff;
 }
 .site-footer {
-  background-color: #151515; /* Почти черный, как на скриншоте */
+  background-color: #151515; 
   padding: 48px 0 30px;
   border-top: 1px solid #2a2a2a;
   font-family: var(--font-family);
@@ -302,7 +304,6 @@ main {
   padding: 0 30px;
 }
 
-/* Верхняя часть футера: навигация и соцсети */
 .footer-top {
   display: flex;
   justify-content: space-between;
@@ -313,7 +314,6 @@ main {
   margin-bottom: 35px;
 }
 
-/* Левая часть: колонки ссылок */
 .footer-links {
   display: flex;
   flex-wrap: wrap;
@@ -325,7 +325,7 @@ main {
 }
 
 .link-column h4 {
-  color: #8dd83d; /* Акцентный зеленый, как в карточках */
+  color: #8dd83d; 
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 18px;
@@ -352,7 +352,6 @@ main {
   color: #8dd83d;
 }
 
-/* Правая часть: иконки соцсетей (Follow Us) */
 .footer-social {
   text-align: right;
 }
@@ -381,7 +380,6 @@ main {
   opacity: 1;
 }
 
-/* Нижняя часть футера: логотип, копирайт, язык */
 .footer-bottom {
   display: flex;
   justify-content: space-between;
@@ -459,7 +457,53 @@ main {
     gap: 30px;
   }
 }
+.btn-desaible {
+  background: linear-gradient(180deg, #686c6f 0%, #373a3c 100%);
+  color: #ffffff;
+}
 
+.technical-specs-section {
+  padding-top: 105px;
+}
+
+.section-title {
+  text-align: center;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 36px;
+  color: #435766;
+}
+
+.specs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.spec-item {
+  padding-top: 47px;
+}
+
+.spec-item p {
+  font-family: var(--font-family);
+font-weight: 400;
+font-size: 21px;
+line-height: 114%;
+color: #435766;
+}
+.spec-buttons{
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 14px
+}
+
+.btn-primary {
+  background-color: #7ed321;
+  color: #ffffff;
+}
 @media (max-width: 600px) {
   .footer-links {
     flex-direction: column;
@@ -469,10 +513,24 @@ main {
     padding: 0 20px;
   }
 }
-
-/* Стилизация маленькой иконки и стрелок (как в вашем дизайне) */
 .small-icon {
   width: 14px;
   margin-left: 4px;
   vertical-align: middle;
 }
+
+.details-header h2 {
+  margin-top: 99px;
+}
+
+.details-btns{
+  margin-top: 209px;
+  gap: 14px;
+  margin-bottom: 103px;
+}
+
+
+.info-block {
+  margin-top: 98px;
+}
+
