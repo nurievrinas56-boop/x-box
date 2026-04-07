@@ -1,29 +1,26 @@
 @font-face {
   font-family: "HelveticaNeue";
-  src: url(cons/HelveticaNeue-Bold.otf);
+  src: url(./fonts/HelveticaNeue-Roman.otf);
 }
-@font-face {
-  font-family: "HelveticaNeue";
-  src: url(cons/HelveticaNeue-Roman.otf);
-}
+
 * {
+  padding: 0;
   margin: 0;
-  bottom: 0;
   box-sizing: border-box;
 }
+
 :root {
   --font-family: "HelveticaNeue", sans-serif;
 }
-.container {
-  max-width: 1110px;
-  padding: 0 15px;
-  margin: 0 auto;
-}
+
+
 header {
   background: #373a3c;
   height: 60px;
   border-radius: 4px;
+
 }
+
 .nav_bar {
   display: flex;
   justify-content: center;
@@ -38,8 +35,271 @@ header {
   font-weight: 400;
   font-size: 16px;
   line-height: 100%;
-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
 }
-.nav_bar span{
-    color: #fff;
+
+
+.xbox-logo {
+  width: 96px;
+  height: 29px;
+  padding-bottom: 13px;
+  margin-right: 300px;
+
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(cons/HelveticaNeue-Bold.otf);
+}
+
+@font-face {
+  font-family: "HelveticaNeue";
+  src: url(cons/HelveticaNeue-Roman.otf);
+}
+
+* {
+  margin: 0;
+  bottom: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-family: "HelveticaNeue", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+header {
+  background: #373a3c;
+  height: 60px;
+  border-radius: 4px;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 24px;
+  padding-top: 21px;
+}
+
+.nav_bar li a {
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+
+/* Обнуляем отступы для main, чтобы картинка была во весь экран */
+main {
+  width: 100%;
+  background-color: #000;
+}
+
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  /* Настройте высоту под макет */
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Растягивает фото без искажений на всю область */
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  /* Легкое затемнение, чтобы текст читался */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  text-align: center;
+  color: #fff;
+  padding-left: 750px;
+  padding-bottom: 115px;
+}
+
+.content h1 {
+  font-family: var(--font-family);
+  font-size: 48px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  font-family: var(--font-family);
+  font-size: 16px;
+  margin-bottom: 30px;
+  padding-right: 220px;
+}
+
+/* Стили кнопок */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 139px;
+  padding-right: 120px;
+}
+
+/* Общие стили для кнопок */
+.btn {
+  text-decoration: none;
+  padding: 12px 24px;
+  font-family: var(--font-family);
+  font-weight: bold;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.btn-green {
+  background: #97f024;
+  color: #fff;
+}
+
+.btn-dark {
+  background: #373a3c;
+  color: #fff;
+}
+
+.btn-gray {
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* БАННЕР (Верх) */
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.banner-flex {
+  display: flex;
+  justify-content: flex-end;
+  /* Текст уходит вправо */
+  width: 100%;
+}
+
+.banner-content {
+  color: #fff;
+  max-width: 450px;
+  text-align: left;
+}
+
+.banner-btns {
+  margin-top: 25px;
+  display: flex;
+  gap: 15px;
+}
+
+/* НИЖНЯЯ СЕКЦИЯ (Детали) */
+.game-details {
+  background: #f8f9fa;
+  /* Светлый фон как на макете */
+  padding: 80px 0;
+  color: #373a3c;
+}
+
+.details-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.details-header h2 {
+font-family: var(--font-family);
+font-weight: 400;
+font-size: 36px;
+color: #435766;
+
+}
+
+.details-btns {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Блоки Текст + Картинка */
+.info-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+
+.info-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.info-text {
+  width: 40%;
+}
+
+.info-
+text h3 {
+  font-size: 28px;
+  line-height: 1.2;
+}
+
+.info-img {
+  width: 55%;
+}
+
+.info-img img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Видео */
+.video-section {
+  margin: 60px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.video-wrapper {
+  position: relative;
+  max-width: 900px;
+}
+
+.video-wrapper img {
+  width: 100%;
+  border-radius: 10px;
 }
