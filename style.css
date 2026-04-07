@@ -540,14 +540,13 @@ color: #435766;
   margin-bottom: 105px;
 }
 
-.site-footer {
-  margin-top: 209px;
-  
-}.btn-primary {
+
+.btn-primary {
   color: #ffffff;
   border-radius: 4px;
   width: 235px;
   height: 52px;
+  margin-bottom: 80px;
 
 }
 
@@ -564,6 +563,7 @@ color: #435766;
   cursor: pointer;
   border: none;
   padding: 15px 19px;
+  
 }
 
 .btn-desaible {
@@ -572,6 +572,7 @@ color: #435766;
   border-radius: 4px;
   width: 235px;
   height: 52px;
+ 
 }
 
 
